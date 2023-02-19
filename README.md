@@ -5,7 +5,7 @@
 This is a Dart-Flutter SDK that helps users integrate [**AzamPay**](https://azampay.com/) in their projects. You can view AzamPay documentation [here](https://developers.azampay.co.tz/sandbox/documentation)
 
 
-### INTEGRAGRATION
+### Use Case
 
 - Import azampay in [your.dart]() file
 ```dart
