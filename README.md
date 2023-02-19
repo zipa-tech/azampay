@@ -8,15 +8,15 @@ This is a Dart-Flutter SDK that helps users integrate [**AzamPay**](https://azam
 ```dart
 import 'package:azampay/azampay.dart';
 
-void main() async {
+// get these credentials from the azampay developers account
+var azampay = AzamPay(
+    sandbox: true, // set to false on production
+    appName: "<app-name>",
+    clientId: "<client-id>",
+    clientSecret:"<client-secret>"
+);
 
-    // get these credentials from the azampay developers account
-    var azampay = AzamPay(
-      sandbox: true, // set to false on production
-      appName: "<app-name>",
-      clientId: "<client-id>",
-      clientSecret:"<client-secret>"
-    );
+void main() async {
 
 
     // MOBILE PUSH CHECKOUT
