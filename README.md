@@ -1,4 +1,4 @@
-[**AzamPay**](https://developerdocs.azampay.co.tz/)
+# [**AzamPay**](https://developerdocs.azampay.co.tz/)
 
 Integrate [**AzamPay**](https://azampay.com/) in your Dart Software 
 
