@@ -65,6 +65,8 @@ void main() async {
 ```
 
 ## Credits and Inspiration
-AzamPay
+1. Thanks much to AzamPay for this wonderful payment system
+2. Tanzanian Devs using AzamPay
 
-[*GITHUB](https://github.com/zipa-tech/azampay/)
+## Issues
+Please open an issue here [**GITHUB**](https://github.com/zipa-tech/azampay/)
