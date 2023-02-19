@@ -1,9 +1,9 @@
-Visit [**AzamPay Documentation**](https://developerdocs.azampay.co.tz/)
+[**AzamPay**](https://developerdocs.azampay.co.tz/)
 
 Integrate [**AzamPay**](https://azampay.com/) in your Dart Software 
 
+## USE CASE EXAMPLE
 ```dart
-// DEMO
 import 'package:azampay/azampay.dart';
 
 void main() async {
