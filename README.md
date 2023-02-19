@@ -4,22 +4,28 @@
 
 This is a Dart-Flutter SDK that helps users integrate [**AzamPay**](https://azampay.com/) in their projects. 
 
-## USE CASE EXAMPLE
+## [SDK USE CASE EXAMPLE]()
+
+- Import azampay in [your.dart]() file
 ```dart
-import 'package:azampay/azampay.dart';
+    import 'package:azampay/azampay.dart';
+```
 
-// get these credentials from the azampay developers account
-var azampay = AzamPay(
-    sandbox: true, // set to false on production
-    appName: "<app-name>",
-    clientId: "<client-id>",
-    clientSecret:"<client-secret>"
-);
+- Initiate your Credentials
+```dart
+    // get these credentials from the azampay developers account
+    var azampay = AzamPay(
+        sandbox: true, // set to false on production
+        appName: "<app-name>",
+        clientId: "<client-id>",
+        clientSecret:"<client-secret>"
+    );
+```
 
+### MOBILE PUSH CHECKOUT
+```dart
 void main() async {
-
-
-    // MOBILE PUSH CHECKOUT
+    
     var mobileResponse = await azampay.mobileCheckout(
         merchantMobileNumber: "<merchant-mobile-number>",
         amount: "<amount>",
@@ -36,9 +42,13 @@ void main() async {
         success: true, transactionId: e06a98b0267a4196913e4c5b4c8b69e3, 
         message: Your request has been received and is being processed.
     }
+}
 
+```
 
-    //  BANK CHECKOUT
+### BANK CHECKOUT
+```dart
+    
     var bankResponse = await azampay.bankCheckout(
       merchantAccountNumber: "<merchant-account-number>",
       merchantName:"<merchant-name>",
