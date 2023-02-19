@@ -1,15 +1,17 @@
 import 'package:azampay/azampay.dart';
 import 'dart:convert';
 
+var azampay = AzamPay(
+  sandbox: true, // set to false on production
+  appName: "<app-name>",
+  clientId: "<client-id>",
+  clientSecret:"<client-secret>"
+);
+
 void main() async {
 
     
-    var azampay = AzamPay(
-      sandbox: true, // set to false on production
-      appName: "<app-name>",
-      clientId: "<client-id>",
-      clientSecret:"<client-secret>"
-    );
+
 
 
     // MOBILE PUSH CHECKOUT
