@@ -7,12 +7,13 @@ This is a Dart-Flutter SDK that helps users integrate [**AzamPay**](https://azam
 
 ### Use Case
 
-- Import azampay in [your.dart]() file
+[SDK SetUp]()
+1. Import azampay in [your.dart]() file
 ```dart
     import 'package:azampay/azampay.dart';
 ```
 
-- Initiate your Credentials
+2. Initiate your Credentials
 ```dart
 // get these credentials from the azampay developers account
 var azampay = AzamPay(
@@ -22,6 +23,8 @@ var azampay = AzamPay(
     clientSecret:"<client-secret>"
 );
 ```
+
+[CHECKOUTS]()
 
 ### MOBILE PUSH CHECKOUT
 ```dart
