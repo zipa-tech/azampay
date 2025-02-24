@@ -4,13 +4,14 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AzamPay {
-  AzamPay(
-      {this.sandbox = true,
-      required this.appName,
-      required this.clientId,
-      required this.clientSecret,
-      this.xApiKey}) {
-        // initialise   
+  AzamPay({
+    this.sandbox = true,
+    required this.appName,
+    required this.clientId,
+    required this.clientSecret,
+    this.xApiKey,
+  }) {
+    // initialise
   }
 
   //  defaults for the variables
@@ -24,10 +25,10 @@ class AzamPay {
 
   //  URLS
   final String sandboxBaseUrl = "https://sandbox.azampay.co.tz";
-  final String sandboxAuthyBaseUrl = "https://authenticator-sandbox.azampay.co.tz";
-  final String productionBaseUrl = " https://checkout.azampay.co.tz.";
+  final String sandboxAuthyBaseUrl =
+      "https://authenticator-sandbox.azampay.co.tz";
+  final String productionBaseUrl = "https://checkout.azampay.co.tz";
   final String productionAuthyBaseUrl = "https://authenticator.azampay.co.tz";
-
 
   String get baseUrl {
     if (sandbox == true) {
